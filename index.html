@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Search/Filter</title>
+</head>
+<body>
+    <nav class="navbar navbar-primary bg-info">
+        <div class="container-fluid">
+            <h1 class="text-white mx-auto font-monospace py-3">Genshin Characters</h1>
+        </div>
+    </nav>
+
+    <section class="container-fluid py-3 w-75">
+        <!--Input Box-->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter Characters Name or Region..." id="userinput">
+        </div>
+        <!--List of characters-->
+        <div class="container-fluid" id="long-list">
+            <ul class="list-group" id="characterList">
+            <!--Monstadt Characters-->
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Albedo (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Amber (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info list-group-item-info">
+                    <p class="m-0">Barbara (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Bennett (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Diluc (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Diona (Mondstadt)</p>
+                </li>                
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Eula (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Fischl (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Jean (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Kaeya (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Klee (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Lisa (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Mona (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Noelle (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Razor (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Rosaria (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Sucrose (Mondstadt)</p>
+                </li>
+                <li class="list-group-item list-group-item-info">
+                    <p class="m-0">Venti (Mondstadt)</p>
+                </li>
+
+            <!--Liyue Characters-->
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Beidou (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Chongyun (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Ganyu (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Hu Tao (Liyue)</p>
+                </li>                
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Keqing (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Ningguang (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Qiqi (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Shenhe (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Xiangling (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Xiao (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Xingqiu (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Xinyan (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Yanfei (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Yun Jin (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Zhongli (Liyue)</p>
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                    <p class="m-0">Yelan (Liyue)</p>
+                </li>
+
+            <!--Inazuma Characters-->
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Arataki Itto (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Gorou (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Kaedehara Kazuha (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Kamisato Ayaka (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Kamisato Ayato (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Kujou Sara (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Raiden Shogun (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Sayu (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Thoma (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Yae Miko (Inazuma)</p>
+                </li>
+                <li class="list-group-item list-group-item-primary">
+                    <p class="m-0">Yoimiya (Inazuma)</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

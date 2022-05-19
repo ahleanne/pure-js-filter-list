@@ -1,0 +1,22 @@
+/* Add scrollbar to the list of characters */
+#long-list {
+    overflow: auto;
+    height: 70vh;
+}
+
+/* Modify scrollbar appearance */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ADD8E6;
+}
+
+::-webkit-scrollbar-track {
+    background: #eaebed;
+}
+
+::-webkit-scrollbar-button {
+    background: #568c9f;
+}
